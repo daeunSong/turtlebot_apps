@@ -1,0 +1,32 @@
+
+# global_frame: odom
+# update_frequency: 4.0
+# publish_frequency: 3.0
+# rolling_window: true
+# track_unknown_space: true
+
+# # transform_tolerance: 0.5
+
+# # plugins:
+#   # - {name: obstacle_layer,          type: "costmap_2d::VoxelLayer"}
+#   # - {name: inflation_layer,         type: "costmap_2d::InflationLayer"}
+
+global_costmap:
+   global_frame: odom
+   robot_base_frame: base_footprint
+   update_frequency: 1.0
+   publish_frequency: 0.5
+   static_map: true
+   transform_tolerance: 0.5
+   plugins:
+     - {name: static_layer,            type: "costmap_2d::StaticLayer"}
+     - {name: obstacle_layer,          type: "costmap_2d::VoxelLayer"}
+     - {name: inflation_layer,         type: "costmap_2d::InflationLayer"}
+     
+
+
+
+
+
+
+

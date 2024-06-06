@@ -1,0 +1,28 @@
+# global_frame: odom
+# rolling_window: true
+# track_unknown_space: true
+
+# plugins:
+#   - {name: obstacles_laser,           type: "costmap_2d::ObstacleLayer"}
+#   - {name: inflation,                 type: "costmap_2d::InflationLayer"}
+
+
+
+global_frame: odom
+update_frequency: 10.0
+publish_frequency: 10.0
+rolling_window: true
+track_unknown_space: true
+
+# transform_tolerance: 0.5
+
+# plugins:
+  # - {name: obstacle_layer,          type: "costmap_2d::VoxelLayer"}
+  # - {name: inflation_layer,         type: "costmap_2d::InflationLayer"}
+
+
+
+
+
+
+
